@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-title
+{
+  color: rgb(171, 171, 239); 
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 3em;
+
+
+  text-shadow: 1px 1px #66a;
+  width: 100%;
+}
+
+.box
+{
+  border: 3px solid #110202;
+  background: #171015;
+  padding: 2em;
+  border-radius: 20px;
+  width: 150%;
+  
+  
+}
+
+.box + .box {
+  margin-top: 1em;
+}
+
+.artitle
+{
+  text-shadow: 1px 1px #66f;
+  opacity: 1;
+  color: #66f; 
+  border-bottom: 1px solid #66f;
+  padding: 0.25em;
+  margin-bottom: 1em;
+  transition: ease 0.35s;
+  width: 100%;
+  font-size: 3em;
+}
+
+.artitle:hover
+{
+  text-shadow: 1px 1px #777;
+  color: #6d8;
+  border-bottom: 3px double #6a6;
+  cursor: pointer;
+  transition: ease 0.35s;
+  
+}
+
+.box p {
+  display: hidden;
+  font-size: 25px;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+
+
+#footer {
+  position: relative;
+  bottom: 0em;
+  text-align: center;
+  padding: 1em;
+  background-color: rgba(28, 11, 11, 0.3);
+  width: 100%;
+  transition: ease 0.35s;
+  margin-top: 1em;
+}
+
+#footer:hover
+{
+  background-color: rgba(6, 0, 0, 0.892);
+  transition: ease 0.35s;
+}
+
+code {
+  background-color: #ffffff;
+  border: 1px solid #dd0a0a;
+  color: #66a;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 2px 4px;
+}
+
+
+.button {
+  all: unset;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #d8d8d8;
+  -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+  /* another workaround */
+  mask-image: radial-gradient(#fff, #000);
+  cursor: pointer;
+}
+.button.dark {
+  border-color: rgba(255, 255, 255, 0.12);
+  background-color: #2b2b2b;
+  color: #dcdadb;
+}
+.button::after {
+  content: '';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 51em;
+  height: 5em;
+  background-image: conic-gradient(#00f, #0ff, #0f0, #ff0, #f00, #f0f, #00f);
+  filter: blur(14px);
+  mix-blend-mode: overlay;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+}
+.button:hover::after {
+  opacity: 0.7;
+}
+.button.dark:hover::after {
+  opacity: 0.4;
+}
+
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #f81313;
+  font-weight: bold;
+}
